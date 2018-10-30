@@ -36,7 +36,7 @@ The following protocols for transferring files are supported on Chinook:
 You can view your storage quotas and usage through the `show_storage` command. `show_storage`will show the quota and usage for $HOME, $ARCHIVE, and $CENTER1, if they are mounted on the machine that you are on.
 
 ```
-chinook00 % show_storage 
+$ show_storage 
 Filesystem   Used_GiB    Soft_GiB   Hard_GiB      Files  Soft Files Hard Files
 ========== ==========  ========== ========== ==========  ========== ==========
 $HOME            0.00       10.00      11.00         16     1000000    1100000
@@ -50,7 +50,7 @@ RCSCLASS         0.25     1024.00    1126.40       1471           0          0
 `show_storage` can also be used to determine how much usage is being consumed by each directory in the main project directory through the use of the `-d PROJECTID` flag. PROJECTID is the Unix group of a specific project. Depending on your usage, this command may take some time to complete.
 
 ```
-chinook00 % show_storage -d rcsclass
+$ show_storage -d rcsclass
 /import/c1/RCSCLASS      GiB
 =================== ========
 uaguest_rclass8         0.00
@@ -69,7 +69,7 @@ uaguest_rclass6         0.00
 The `du` command can be used to display how much storage is being used by specific directories. `du -h /center1/PROJECTID/path/to/directory` will list the storage used by each directory in `/center1/PROJECTID/path/to/directory`
 
 ```
-chinook00 % du -h /center1/RCSCLASS/uaguest_rclass1
+$ du -h /center1/RCSCLASS/uaguest_rclass1
 53K /center1/RCSCLASS/uaguest_rclass1/data
 106K  /center1/RCSCLASS/uaguest_rclass1
 ```
@@ -77,6 +77,6 @@ chinook00 % du -h /center1/RCSCLASS/uaguest_rclass1
 `du -sh /center1/PROJECTID/path/to/directory` will sum up the total storage used by a directory.
 
 ```
-chinook00 % du -sh /center1/RCSCLASS/uaguest_rclass1/data
+$ du -sh /center1/RCSCLASS/uaguest_rclass1/data
 53K /center1/RCSCLASS/uaguest_rclass1/data
 ```
