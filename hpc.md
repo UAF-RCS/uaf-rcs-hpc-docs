@@ -2,14 +2,14 @@
 
 ## Contents
 
-* [Logging In](logging-in/logging-in.md)
-* Available Filesystems
-* Using the Batch System
-* Third-Party Software
-* Compiling from Source Code
-* System Architecture
-* Community Condo Model
-* Policies
+1. [Logging In](logging-in/logging-in.md)
+2. Available Filesystems
+3. Using the Batch System
+4. Third-Party Software
+5. Compiling from Source Code
+6. System Architecture
+7. Community Condo Model
+8. Policies
 
 ## Chinook
 
