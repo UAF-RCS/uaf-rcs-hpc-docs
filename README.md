@@ -1,2 +1,4 @@
-# uaf-rcs-hpc-docs
+# README
+
 A repository for UAF RCS HPC user documentation
+
