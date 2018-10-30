@@ -1,6 +1,8 @@
 RCS High Performance Computing (HPC) Documentation
 ==================================================
 
+## Contents
+
 * Logging In
 * Available Filesystems
 * Using the Batch System
@@ -9,6 +11,8 @@ RCS High Performance Computing (HPC) Documentation
 * System Architecture
 * Community Condo Model
 * Policies
+
+## Chinook
 
 In 2016, the Geophysical Institute launched Chinook as an energy efficient
 linux cluster purchased from [Penguin Computing,
@@ -19,7 +23,6 @@ funding from the M. J. Murdock Charitable Trust. Chinook  is also made possible
 by the Geophysical Institute, IARC, the Institute of  Arctic Biology, the Vice
 Chancellor of Research, and your fellow colleagues  who contribute shares.
 
-== Chinook
 
 Chinook is the foundation for a new energy-efficient, condo-style HPC cluster
 for UA researchers. The computing environment hosted on Chinook includes:
@@ -40,7 +43,7 @@ Are you interested in using the Chinook HPC cluster in your computational
 work? Please read our directions on how to [obtain RCS project and user
 accounts](https://www.gi.alaska.edu/research-computing-systems/getting-access).
 
-== XSEDE/Campus Champions
+## XSEDE/Campus Champions
 
 Members of RCS staff are part of [XSEDE's Campus Champions
 program](https://www.xsede.org/community-engagement/campus-champions),
