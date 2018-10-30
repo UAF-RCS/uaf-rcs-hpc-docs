@@ -3,7 +3,7 @@
 ## Contents
 
 1. [Logging In](logging-in/logging-in.md)
-2. Available Filesystems
+2. [Available Filesystems](available-filesystems/available-filesystems.md)
 3. Using the Batch System
 4. Third-Party Software
 5. Compiling from Source Code
@@ -29,3 +29,4 @@ Are you interested in using the Chinook HPC cluster in your computational work? 
 ## XSEDE/Campus Champions
 
 Members of RCS staff are part of [XSEDE's Campus Champions program](https://www.xsede.org/community-engagement/campus-champions), providing support and contacts for XSEDE systems and XSEDE startup allocations. Please contact RCS if you are interested in pursuing XSEDE resources.
+

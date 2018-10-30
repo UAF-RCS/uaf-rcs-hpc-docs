@@ -10,3 +10,7 @@
 * [Windows SSH](logging-in/windows-ssh.md)
 * [Using VNC to Login](logging-in/using-vnc-to-login.md)
 
+## Available Filesystems
+
+* [Available Filesystems](available-filesystems/available-filesystems.md)
+
