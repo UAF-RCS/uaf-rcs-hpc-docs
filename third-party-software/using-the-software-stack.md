@@ -1,6 +1,6 @@
 # Using the Software Stack
 
-Chinook already has builds of many third-party software packages \([see below](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/third-party-software#install-list) for a listing\). There are often multiple builds of a particular software package - different versions, different compilers used to build the software, different compile-time flags, et cetera. To avoid conflicts between these many disparate package builds, Chinook employs an _environment module_ system you can use to load and unload different combinations of software packages into your environment.
+Chinook already has builds of many third-party software packages \(see below for a listing\). There are often multiple builds of a particular software package - different versions, different compilers used to build the software, different compile-time flags, et cetera. To avoid conflicts between these many disparate package builds, Chinook employs an _environment module_ system you can use to load and unload different combinations of software packages into your environment.
 
 #### What are Environment Modules? <a id="environment-modules"></a>
 

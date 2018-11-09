@@ -21,7 +21,7 @@ This level of service is for the PI or project that requires CPUs beyond what ca
 
 * Unlimited total compute node CPU hours
 * Higher initial job priority, weighted by number of shares procured
-* 10 GB [$HOME](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/filesystems#home) quota 
+* 10 GB [$HOME](../available-filesystems/available-filesystems.md#home) quota 
 * 1 TB + 1 TB/node project shared Lustre storage quota \($CENTER1, unpurged\)
 * Access to job queues with limited wall times greater than Tier 1
 * Short term reservations \(contact [uaf-rcs@alaska.edu](mailto:uaf-rcs@alaska.edu) to arrange\)

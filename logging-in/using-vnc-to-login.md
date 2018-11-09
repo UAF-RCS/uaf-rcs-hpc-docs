@@ -1,7 +1,5 @@
 # Using VNC to Login
 
-
-
 To run graphical applications on RCS systems remotely, the Virtual Network Computing \(VNC\) application is available and provides some advantages beyond using X Windows over SSH such as a detachable session and better performance over a slow speed connection. Here is basic set up information required for this approach.
 
 \*\*\*Important Note: Please follow all of these steps with each new VNC session.\*\*\*
@@ -19,7 +17,7 @@ After installing the software, make sure ports 5900 and 5901 are open to allow V
 On Linux or MAC systems:
 
 ```text
-
+local$ ssh -L 5901:localhost:5901 username@remote.alaska.edu
 ```
 
 On a Windows system:
@@ -38,7 +36,17 @@ Log onto the remote system over SSH and specify the appropriate ports for VNC cl
 Launch a VNC server instance on the remote system. The initial vncserver instance will prompt you for a password to protect your session. Subsequent launches of vncserver will use the same password and you will not be prompted for a password.
 
 ```text
+remote$ vncserver -localhost
 
+You will require a password to access your desktops.
+Password:
+Verify:
+
+New 'remote:1 (username)' desktop is remote:1
+
+Creating default startup script /u1/uaf/username/.vnc/xstartup
+Starting applications specified in /u1/uaf/username/.vnc/xstartup
+Log file is /u1/uaf/username/.vnc/remote:1.log
 ```
 
 #### Step 4: Open VNC on your local system <a id="vncstep4"></a>
@@ -72,7 +80,11 @@ Note that some VNC viewer programs can automatically set up the SSH port forward
 To close your VNC session, view the open sessions on the remote system, then close the appropriate one.
 
 ```text
-
+remote$ vncserver -list
+TigerVNC server sessions:
+X DISPLAY #     PROCESS ID
+:1                    252550
+remote$ vncserver -kill :1
 ```
 
 #### Troubleshooting <a id="vnctrouble"></a>
@@ -82,7 +94,13 @@ To close your VNC session, view the open sessions on the remote system, then clo
    If a previous VNC session remains open on the remote system, that old session will need to be closed prior to establishing a new connection using the same port. To identify and kill the old session, first obtain the processID of the "Xnvc" process, then issue the kill command.
 
    ```text
-
+   remote$ ps -elf | grep username | grep Xvnc
+   0 S username    236193      1  0  80   0 - 24842 poll_s Nov09 ?        
+         00:00:10 /usr/bin/Xvnc :1 -desktop remote:1 (username) 
+         -auth /u1/uaf/username/.Xauthority -geometry 1024x768 
+         -rfbwait 30000 -rfbauth /u1/uaf/username/.vnc/passwd 
+         -rfbport 5901 -fp catalogue:/etc/X11/fontpath.d -pn -localhost
+   remote$ kill 236193
    ```
 
 2. Locked Session

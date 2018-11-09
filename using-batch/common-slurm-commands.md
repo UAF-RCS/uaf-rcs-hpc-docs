@@ -18,12 +18,12 @@ For more information on `sacct`, please visit [https://slurm.schedmd.com/sacct.h
 
 #### sbatch <a id="sbatch"></a>
 
-The `sbatch` command is used for submitting jobs to the cluster. Although it is possible to supply command-line arguments to `sbatch`, it is generally a good idea to put all or most resource requests in the [batch script](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#batch-scripts) for reproducibility.
+The `sbatch` command is used for submitting jobs to the cluster. Although it is possible to supply command-line arguments to `sbatch`, it is generally a good idea to put all or most resource requests in the [batch script](batch-scripts.md) for reproducibility.
 
 Sample usage:
 
 ```text
-
+$sbatch mybatch.sh
 ```
 
 On successful batch submission, `sbatch` will print out the new job's ID. `sbatch` may fail if the resources requested cannot be satisfied by the indicated partition.

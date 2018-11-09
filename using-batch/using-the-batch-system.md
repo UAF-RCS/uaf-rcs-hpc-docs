@@ -1,8 +1,8 @@
 # Using the Batch System
 
-The [Slurm](https://www.schedmd.com/) \(Simple Linux Utility for Resource Management\) workload manager is a software package for submitting, scheduling, and monitoring jobs on large compute clusters. Slurm is available on Chinook for submitting and monitoring user jobs.
+The [SLURM](https://www.schedmd.com/) \(Simple Linux Utility for Resource Management\) workload manager is a software package for submitting, scheduling, and monitoring jobs on large compute clusters. SLURM is available on Chinook for submitting and monitoring user jobs.
 
-Similar to PBS/TORQUE, Slurm accepts user jobs specified in batch scripts. More information on Slurm batch scripts may be found [below](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#batch-scripts).
+Similar to PBS/TORQUE, SLURM accepts user jobs specified in batch scripts. More information on SLURM batch scripts may be found below.
 
-Common Slurm commands, Slurm batch scripts, translating from PBS/TORQUE to Slurm, and running interactive jobs are discussed below. SchedMD, the company behind Slurm, has also put together a [quick reference for Slurm commands](https://slurm.schedmd.com/pdfs/summary.pdf).
+Common SLURM commands, SLURM batch scripts, translating from PBS/TORQUE to SLURM, and running interactive jobs are discussed below. SchedMD, the company behind SLURM, has also put together a [quick reference for SLURM commands](https://slurm.schedmd.com/pdfs/summary.pdf).
 

@@ -27,19 +27,9 @@ Establishing a remote login session over SSH using PuTTY is reasonably straightf
 2. For "Host Name", enter `chinook.alaska.edu`.
 3. Select "Open" to initiate an SSH connection request.
 4. You may receive a security alert warning you that your client cannot establish authenticity of the host you are connecting to. This warning is always displayed the first time your SSH client connects to any computer it has never connected before. If you have never connected to Chinook using this PuTTY installation, select "Yes".
-5. A terminal window should open. You will be prompted for a username. Enter your UA username.
-6. If you want to avoid entering your UA username every time you log in, you can prefix the hostname you entered earlier with your UA username followed by
-7. 8. `@`
-9. . As an example, a user named jsmith2 could enter
-10. 11. `jsmith2@chinook.alaska.edu`
-12. . This is the same
-13. 14. `user@host`
-15. 16. syntax expected by OpenSSH.
-17. You will be prompted for a password. Enter your UA password and continue.
-18. Public key authentication is supported by PuTTY via the Pageant tool. If you wish to set up this authentication scheme, please see Chapter 8 of the
-19. 20. [PuTTY documentation](https://the.earth.li/~sgtatham/putty/latest/htmldoc/)
-21. .
-22. On successful authentication, a command prompt will appear and allow you to execute commands on Chinook.
+5. A terminal window should open. You will be prompted for a username. Enter your UA username. If you want to avoid entering your UA username every time you log in, you can prefix the hostname you entered earlier with your UA username followed by`@`. As an example, a user named jsmith2 could enter`jsmith2@chinook.alaska.edu`. This is the same`user@host`syntax expected by OpenSSH.
+6. You will be prompted for a password. Enter your UA password and continue. Public key authentication is supported by PuTTY via the Pageant tool. If you wish to set up this authentication scheme, please see Chapter 8 of the [PuTTY documentation](https://the.earth.li/~sgtatham/putty/latest/htmldoc/).
+7. On successful authentication, a command prompt will appear and allow you to execute commands on Chinook.
 
 #### Enabling Graphics <a id="enabling-graphics"></a>
 

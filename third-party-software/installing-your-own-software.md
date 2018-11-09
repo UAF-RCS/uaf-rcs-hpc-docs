@@ -4,7 +4,7 @@
 
 Individuals and research groups may install third party applications and libraries for their own use in the following locations:
 
-* [$HOME](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/filesystems#home)
+* [$HOME](../available-filesystems/available-filesystems.md#home)
 * `/usr/local/unsupported`
 
 Packages built for personal use only should be installed in $HOME.
