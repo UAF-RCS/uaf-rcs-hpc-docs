@@ -2,7 +2,7 @@
 
 ### Physical Architecture
 
-![](../.gitbook/assets/unnamed.png)
+![](../.gitbook/assets/chinookarchitecture.png)
 
 Chinook currently has five login nodes:
 
