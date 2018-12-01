@@ -14,12 +14,12 @@ A new module named "sintr" is available to create an interactive job that forwar
 
 `chinook00 % ssh-keygen -t rsa  
 Generating public/private rsa key pair.  
-Enter file in which to save the key (/u1/uaf/<USERNAME>/.ssh/id_rsa):  
+Enter file in which to save the key (/home/<USERNAME>/.ssh/id_rsa):  
 Enter passphrase (empty for no passphrase):  
 Enter same passphrase again:  
 ...`
 
-The command will prompt you for the location to save the file, using `/u1/uaf/<USERNAME>/.ssh/id_rsa` as the default. The rsa key pair must be saved in that file. You will also be prompted for a passphrase for the key pair which will be used when connecting to a compute node with sintr. The contents of `$HOME/.ssh/id_rsa.pub` must then be added to `$HOME/.ssh/authorized_keys`. This can be done with the following command:
+The command will prompt you for the location to save the file, using `/home/<USERNAME>/.ssh/id_rsa` as the default. The rsa key pair must be saved in that file. You will also be prompted for a passphrase for the key pair which will be used when connecting to a compute node with sintr. The contents of `$HOME/.ssh/id_rsa.pub` must then be added to `$HOME/.ssh/authorized_keys`. This can be done with the following command:
 
 `cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys`
 
