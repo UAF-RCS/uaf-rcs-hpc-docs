@@ -13,7 +13,7 @@
 
 ## Chinook
 
-In 2016, the Geophysical Institute launched Chinook as an energy efficient linux cluster purchased from [Penguin Computing, Inc](http://www.penguincomputing.com/). Chinook is named in honor of long time GI colleague Kevin Engle's unique, strong, collaborative nature and passion for salmon and Alaska. In 2016 and 2017, Chinook expansions were supported with funding from the M. J. Murdock Charitable Trust. Chinook is also made possible by the Geophysical Institute, IARC, the Institute of Arctic Biology, the Vice Chancellor of Research, and your fellow colleagues who contribute shares.
+In 2015, the Geophysical Institute launched Chinook as an energy efficient linux cluster purchased from [Penguin Computing, Inc](http://www.penguincomputing.com/). Chinook is named in honor of long time GI colleague Kevin Engle's unique, strong, collaborative nature and passion for salmon and Alaska. In 2016 and 2017, Chinook expansions were supported with funding from the M. J. Murdock Charitable Trust. Chinook is also made possible by the Geophysical Institute, IARC, the Institute of Arctic Biology, the Vice Chancellor of Research, and your fellow colleagues who contribute shares.
 
 Chinook is the foundation for a new energy-efficient, condo-style HPC cluster for UA researchers. The computing environment hosted on Chinook includes:
 
