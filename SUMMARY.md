@@ -28,6 +28,7 @@
 * [Third-Party Software](third-party-software/third-party-software.md)
 * [Installing Your Own Software](third-party-software/installing-your-own-software.md)
 * [Using the Software Stack](third-party-software/using-the-software-stack.md)
+* [Using Software Collections \(SCL\)](third-party-software/using-software-collections-scl.md)
 * [Complier Toolchains](third-party-software/complier-toolchains.md)
 * [MPI Libraries](third-party-software/mpi-libraries.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
