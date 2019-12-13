@@ -75,6 +75,7 @@ As of 2018-11-09.
 | pixman | 0.34.0 | ✓ | ✓ |  |
 | pkg-config | 0.29.1 | ✓ | ✓ |  |
 | Python | 2.7.12 | ✓ |  |  |
+| Python | 3.6.9 |  |  | Use the scl command to enable this version | 
 | Rosetta | 3.8 | ✓ | ✓ |  |
 | SAMtools | 1.3.1 | ✓ |  |  |
 | ScaLAPACK | 2.0.2 |  | ✓ | Included in pic-foss compiler toolchain |
