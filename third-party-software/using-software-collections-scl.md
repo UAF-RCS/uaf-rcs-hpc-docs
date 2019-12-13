@@ -26,7 +26,7 @@ When in an SCL session, the `exit` command will end the session. A second `exit`
 
 ## Using an SCL in a SLURM Job
 
-In order to use an SCL in a batch job, the job script either has to launch using `scl` to load the desired software, or the job script has to execute another script that does so. To launch a `bash` script that loads the python 3.6.X SCL, for example, put the following as the first line.
+In order to use an SCL in a batch job, the job script either has to launch using `scl` to load the desired software, or the job script has to execute another script that does so. To launch a `bash` script \(including a job script\) that loads the python 3.6.X SCL, for example, put the following as the first line.
 
 ```text
 #!/usr/bin/scl enable rh-python36 -- /bin/bash
