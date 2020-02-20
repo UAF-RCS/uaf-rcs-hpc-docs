@@ -18,11 +18,12 @@ The following protocols for transferring files are supported on Chinook:
 
 ## $CENTER1  <a id="center"></a>
 
-* The $CENTER1 scratch filesystem is accessible from the Chinook login and compute nodes.
+* The $CENTER1 scratch filesystem is accessible from the Chinook login, compute nodes, and bigdipper.rcs.alaska.edu.
 * User directories on $CENTER1 are now /center1/PROJECTID/UAusername
-* Default $CENTER1 quotas are set to 1 TB **per project**. All users on a project will share this 1 TB quota.
+* Default $CENTER1 quotas are set to 1 TB **per project**. All project users will share this 1 TB quota.
 * Files are no longer purged on $CENTER1, but project quotas are in effect.
-* $CENTER1 is a scratch storage space and is not backed up. For long term storage please copy your files off of $CENTER1.
+* **$CENTER1 is a scratch storage space and is not backed up.** For long term storage please copy your files off of $CENTER1.
+* For information on getting better IO performance using $CENTER, see our [Lustre Striping Guide](https://uaf-rcs.gitbook.io/uaf-rcs-storage-docs/lustre_striping_guide).
 
 ## $ARCHIVE  <a id="archive"></a>
 
