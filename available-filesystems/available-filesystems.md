@@ -12,7 +12,7 @@ The following protocols for transferring files are supported on Chinook:
 
 ## $HOME  <a id="home"></a>
 
-* The $HOME filesystem is accessible from the Chinook login and compute nodes.
+* The $HOME filesystem is accessible from the Chinook login and compute nodes, and bigdipper.rcs.alaska.edu.
 * Default $HOME quota: 10 GB
 * The $HOME filesystem is backed up regularly.
 
@@ -27,7 +27,7 @@ The following protocols for transferring files are supported on Chinook:
 
 ## $ARCHIVE  <a id="archive"></a>
 
-* The $ARCHIVE filesystem is accessible from the Chinook login nodes only.
+* The $ARCHIVE filesystem is accessible from the Chinook login nodes and bigdipper.rcs.alaska.edu.
 * Files stored in $ARCHIVE will be written to tape and taken offline over time. Use the "batch\_stage" command to bring the files back online prior to viewing the contents of the file or copying the data off $ARCHIVE.
 * To stage directories run "batch\_stage -r &lt;DIRECTORY&gt;". For more help and samples run "batch\_stage -h".
 * If you have a legacy ARSC username, a symbolic link has been created linking your /archive/u1/uaf/ARSCusername directory to your /archive/u1/uaf/UAusername directory.
