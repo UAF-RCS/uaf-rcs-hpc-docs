@@ -22,6 +22,7 @@
 * [Common Slurm Commands](using-batch/common-slurm-commands.md)
 * [Batch Scripts](using-batch/batch-scripts.md)
 * [Interactive Jobs](using-batch/interactive-jobs.md)
+* [Select a Processor Architecture](using-batch/select-a-processor-architecture.md)
 
 ## Third Party Software
 
