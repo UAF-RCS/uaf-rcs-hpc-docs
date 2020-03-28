@@ -40,7 +40,7 @@ Alternately, individual commands, or scripts, can be executed using the `scl` co
 /usr/bin/scl enable rh-python36 ./test.py
 ```
 
-If you are passing command line arguments to your script you will need to enclose your script and command in double quots:
+If you are passing command line arguments to your script you will need to enclose your script and command in double quotes:
 
 ```text
 /usr/bin/scl enable rh-python36 "./test.py -n arg1"
