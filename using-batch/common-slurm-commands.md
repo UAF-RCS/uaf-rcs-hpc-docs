@@ -63,7 +63,7 @@ For more information on `sinfo`, please visit [https://slurm.schedmd.com/sinfo.h
 
 #### smap <a id="smap"></a>
 
-The `smap` command is an ncurses-based tool useful for viewing the status of jobs, nodes, and node reservations. It aggregates data exposed by other Slurm commands, such as [sinfo](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#sinfo) and [squeue](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#squeue).
+The `smap` command is an ncurses-based tool useful for viewing the status of jobs, nodes, and node reservations. It aggregates data exposed by other Slurm commands, such as [sinfo](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/common-slurm-commands#sinfo) and [squeue](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/common-slurm-commands#squeue).
 
 | Command | Result |
 | :--- | :--- |
@@ -119,15 +119,15 @@ Alternatively, `srun` can be run directly from the command line on a login node,
 
 Please note that `srun` **does not inherently parallelize programs** - it simply runs many independent instances of the specified program in parallel across the nodes assigned to the job. Put another way, `srun` will launch a program in parallel, but makes no guarantee that the program is designed to be run in parallel at any degree.
 
-See [Interactive Jobs](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#interactive-jobs) for an example of how to use `srun`to allocate and run an interactive job \(i.e. a job whose input and output are attached to your terminal\).
+See [Interactive Jobs](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/interactive-jobs) for an example of how to use `srun`to allocate and run an interactive job \(i.e. a job whose input and output are attached to your terminal\).
 
-A note about MPI: `srun` is designed to run MPI applications without the need for using `mpirun`or `mpiexec`, but this ability is currently not available on Chinook. It may be made available in the future. Until then, please refer to the directions on how to [run MPI applications on Chinook](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#batch-scripts-mpi) below.
+A note about MPI: `srun` is designed to run MPI applications without the need for using `mpirun`or `mpiexec`, but this ability is currently not available on Chinook. It may be made available in the future. Until then, please refer to the directions on how to [run MPI applications on Chinook](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/batch-scripts#batch-scripts-mpi).
 
 For more information on `srun`, please visit [https://slurm.schedmd.com/srun.html](https://slurm.schedmd.com/srun.html).
 
 #### sview <a id="sview"></a>
 
-The `sview` command is a graphical interface useful for viewing the status of jobs, nodes, partitions, and node reservations. It aggregates data exposed by other Slurm commands, such as [sinfo](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#sinfo), [squeue](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#squeue), and [smap](https://www.gi.alaska.edu/research-computing-systems/hpc/chinook/using-batch-system#smap), and refreshes every few seconds.
+The `sview` command is a graphical interface useful for viewing the status of jobs, nodes, partitions, and node reservations. It aggregates data exposed by other Slurm commands, such as [sinfo](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/common-slurm-commands#sinfo), [squeue](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/common-slurm-commands#squeue), and [smap](https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/using-batch/common-slurm-commands#smap), and refreshes every few seconds.
 
 For more information on `sview`, please visit [https://slurm.schedmd.com/sview.html](https://slurm.schedmd.com/sview.html).
 
