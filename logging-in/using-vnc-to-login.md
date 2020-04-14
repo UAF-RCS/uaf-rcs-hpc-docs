@@ -107,11 +107,15 @@ remote$ vncserver -kill :1
 
    Depending on your desktop settings on the remote system, the X screensaver may kick in and lock the session after a period of inactivity. If this happens, you'll be prompted for a password that doesn't exist. The xlock process can be killed from the command line. We recommend disabling X locking in the VNC displayed desktop settings to avoid this happening.
 
-3. Reset Server Password
+3. Banish Authentication Popup
+
+   If you get a "Authentication is required to set the network proxy used for downloading packages" dialog box constantly opening, launch a Terminal Console and type gnome-session-properties and then uncheck the PackageKit Update Applet. You may need to restart your VNC session for this to take effect.
+
+4. Reset Server Password
 
    To change the VNC server password, use the 'vncpasswd' command on the remote system.
 
-4. More Information
+5. More Information
 
    Run 'vncserver --help' and 'man vncserver' for more information on how to use the application.
 
