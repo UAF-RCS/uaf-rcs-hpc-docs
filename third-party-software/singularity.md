@@ -66,7 +66,7 @@ module load singularity
 singularity exec /usr/local/unsupported/SINGULARITY/centos7.img /mnt/center1/myScript
 ```
 
-Additionally if you need to run a set of commands in a Singularity environment you can use the `singularity shell` command. This can be useful if the whole pipeline is installed in the container. When doing this you will need to properly redirect the arguments to the command.
+Additionally if you need to run a set of commands in a Singularity environment you can use the `singularity shell` command. This can be useful if the whole pipeline is installed in the container.
 
 ```
 #!/bin/bash
