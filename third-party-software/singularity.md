@@ -35,6 +35,7 @@ If you need to set an environment variable at runtime you can using the `SINGULA
 
 ```
 SINGULARITYENV_HELLO=WORLD singularity exec /usr/local/unsupported/SINGULARITY/centos7.img env | grep HELLO
+
 HELLO=WORLD
 ```
 
@@ -42,6 +43,7 @@ Please note that you cannot use this to overwrite an environment variable in the
 
 ```
 SINGULARITYENV_CENTER1=/mnt/center1 SINGULARITYENV_ARCHIVE=/mnt/archive singularity exec --cleanenv --bind $CENTER1:/mnt/center1,$ARCHIVE:/mnt/archive /usr/local/unsupported/SINGULARITY/centos7.img env | grep CENTER1
+
 CENTER1=/mnt/center1
 ```
 
