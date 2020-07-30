@@ -83,10 +83,11 @@ module load singularity
 singularity shell \
     --bind $CENTER1:/mnt/center1 \
     /usr/local/unsupported/SINGULARITY/centos7.img <<EOF
-python -c "import myLibrary"
+/mnt/center1/processingScript.py
+/mnt/center1/analyzingScript.py
 EOF
 ```
-This script will bind $CENTER1 to /mnt/center1 inside the Singularity container and then execute the commands in between `<<EOF` and `EOF`, so it will run python and import "myLibrary".
+This script will bind $CENTER1 to /mnt/center1 inside the Singularity container and then execute the commands in between `<<EOF` and `EOF` in a shell in the container, in this example running "processingScript.py" and following that with "analyzingScript.py" which are located in $CENTER1, which has been bound to /mnt/center1 in the container.
 
 #### Creating Images
 
