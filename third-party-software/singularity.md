@@ -9,6 +9,12 @@ To run Singularity, the singularity environment module needs to be loaded: `modu
 ```
 module load singularity
 singularity exec /usr/local/unsupported/SINGULARITY/centos7.img ld --version
+
+GNU ld version 2.27-34.base.el7
+Copyright (C) 2016 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty
 ```
 
 #### Mounting Directories
@@ -27,11 +33,17 @@ When using the `singularity exec` command Environment Variables on the host mach
 
 If you need to set an environment variable at runtime you can using the `SINGULARITYENV_` prefix before running the command:
 
-`SINGULARITYENV_HELLO=WORLD singularity exec /usr/local/unsupported/SINGULARITY/centos7.img env | grep HELLO`
+```
+SINGULARITYENV_HELLO=WORLD singularity exec /usr/local/unsupported/SINGULARITY/centos7.img env | grep HELLO
+HELLO=WORLD
+```
 
 Please note that you cannot use this to overwrite an environment variable in the Host environment. If you need to do so, you would need to run the `--cleanenv` flag. You may want to do this if you'd like to set the $CENTER1 or $ARCHIVE variables in your container. Multiple environments can be set by separateing them with a space (` `):
 
-`SINGULARITYENV_CENTER1=/mnt/center1 SINGULARITYENV_ARCHIVE=/mnt/archive singularity exec --cleanenv --bind $CENTER1:/mnt/center1,$ARCHIVE:/mnt/archive /usr/local/unsupported/SINGULARITY/centos7.img env | grep CENTER1`
+```
+SINGULARITYENV_CENTER1=/mnt/center1 SINGULARITYENV_ARCHIVE=/mnt/archive singularity exec --cleanenv --bind $CENTER1:/mnt/center1,$ARCHIVE:/mnt/archive /usr/local/unsupported/SINGULARITY/centos7.img env | grep CENTER1
+CENTER1=/mnt/center1
+```
 
 #### Using Singularity in a batch script
 
