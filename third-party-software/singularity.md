@@ -51,6 +51,43 @@ CENTER1=/mnt/center1
 
 Singularity can be used in a batch script by loading the Singularity module and running the `singularity exec` command.
 
+```
+#!/bin/bash
+#SBATCH --job-name="My Singularity Job"
+#SBATCH --partition=debug
+#SBATCH --ntasks=24
+#SBATCH --time=00:30:00
+#SBATCH --tasks-per-node=24
+#SBATCH --output="myjob.%j"
+
+module purge
+module load singularity
+
+singularity exec /usr/local/unsupported/SINGULARITY/centos7.img /mnt/center1/myScript
+```
+
+Additionally if you need to run a set of commands in a Singularity environment you can use the `singularity shell` command. This can be useful if the whole pipeline is installed in the container. When doing this you will need to properly redirect the arguments to the command.
+
+```
+#!/bin/bash
+#SBATCH --job-name="My Singularity Job"
+#SBATCH --partition=debug
+#SBATCH --ntasks=24
+#SBATCH --time=00:30:00
+#SBATCH --tasks-per-node=24
+#SBATCH --output="myjob.%j"
+
+module purge
+module load singularity
+
+singularity shell \
+    --bind $CENTER1:/mnt/center1 \
+    /usr/local/unsupported/SINGULARITY/centos7.img <<EOF
+python -c "import myLibrary"
+EOF
+```
+This script will bind $CENTER1 to /mnt/center1 inside the Singularity container and then execute the commands in between `<<EOF` and `EOF`, so it will run python and import "myLibrary".
+
 #### Creating Images
 
 One advantage to Singularity as a container solution is that Singularity does not require admin access to run. Therefore users, if needed, and create or obtain images themselves to run on Chinook. Please note that due to the operating system on Chinook that Singularity images that are based on the newest OSes may not work. We recommend that Singularity images be built on:
