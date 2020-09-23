@@ -33,7 +33,7 @@
 * [Complier Toolchains](third-party-software/complier-toolchains.md)
 * [MPI Libraries](third-party-software/mpi-libraries.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
-
+* [Singularity](third-party-software/singularity.md)
 ## Compiling Source
 
 * [Compiling from Source Code](compiling-source/compiling-from-source-code.md)
