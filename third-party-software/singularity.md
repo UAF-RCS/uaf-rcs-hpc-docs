@@ -96,4 +96,4 @@ One advantage to Singularity as a container solution is that Singularity does no
 * Debian 7 (wheezy) or 8 (jessie)
 * RHEL7
 
-Images will need to be created on a system that the user has Administrator access to and **users cannot create Singularity images on Chinook itself**. Information on building a container can be located [https://sylabs.io/guides/3.2/user-guide/build_a_container.html](via Singularity's documentation)
+Images will need to be created on a system that the user has Administrator access to and **users cannot create Singularity images on Chinook itself**. Information on building a container can be located [https://sylabs.io/guides/3.2/user-guide/build_a_container.html] (via Singularity's documentation)
