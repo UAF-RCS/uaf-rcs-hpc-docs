@@ -1,6 +1,6 @@
 # Logging In
 
-To log into Chinook, you will need a [user account](https://www.gi.alaska.edu/research-computing-systems/) \(under Services -> New User\) and Secure Shell \(SSH\) client program.
+To log into Chinook, you will need a [user account](https://www.gi.alaska.edu/research-computing-systems/) \(under Services -> New Users\) and Secure Shell \(SSH\) client program.
 
 Use the SSH client you have chosen and installed to connect to `chinook.alaska.edu`. When prompted for a username, either interactively or while configuring the client, you should provide your UA username. You will be prompted for a password upon opening an SSH connection. When this happens, enter your UA password.
 
