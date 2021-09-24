@@ -36,7 +36,7 @@ To make things more complicated, `module avail` is also case-sensitive. Running 
 One workaround for these impediments is to combine `module avail` output with `grep`'s full-text case-insensitive string matching ability. The example below additionally uses [Bash file descriptor redirection](http://mywiki.wooledge.org/BashSheet#Redirection) syntax to redirect stderr to stdout because `module avail` outputs to stderr.
 
 ```text
-
+module avail 2>&1 | grep -i pkg
 ```
 
 replacing _pkg_ with the string you are searching for.
