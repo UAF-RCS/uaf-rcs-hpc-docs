@@ -13,11 +13,12 @@
 
 ## Chinook
 
-In 2015, the Geophysical Institute launched Chinook as an energy efficient linux cluster purchased from [Penguin Computing, Inc](http://www.penguincomputing.com/). Chinook is named in honor of long time GI colleague Kevin Engle's unique, strong, collaborative nature and passion for salmon and Alaska. In 2016 and 2017, Chinook expansions were supported with funding from the M. J. Murdock Charitable Trust. Chinook is also made possible by the Geophysical Institute, IARC, the Institute of Arctic Biology, the Vice Chancellor of Research, and your fellow colleagues who contribute shares.
+In 2015, the Geophysical Institute launched Chinook as an energy efficient linux cluster purchased from [Penguin Computing, Inc](http://www.penguincomputing.com/). Chinook is named in honor of long time GI colleague Kevin Engle's unique, strong, collaborative nature and passion for salmon and Alaska. Chinook is made possible by the Geophysical Institute, IARC, the Institute of Arctic Biology, the Vice Chancellor of Research, and your fellow colleagues who contribute shares. In 2016 and 2017, Chinook expansions were also supported with funding from the M. J. Murdock Charitable Trust.
 
-Chinook is the foundation for a new energy-efficient, condo-style HPC cluster for UA researchers. The computing environment hosted on Chinook includes:
+Chinook is the foundation for an energy-efficient, condo-style HPC cluster for UA researchers. The computing environment hosted on Chinook includes:
 
-* 100+ Relion 1900 Compute Nodes each with dual Intel Xeon 12- or 14-core processors \(24 or 28 cores per node\) and 128 GB memory
+* 105x Relion 1900 Compute Nodes each with dual Intel Xeon 12- or 14-core processors \(24 or 28 cores per node\) and 128 GB memory
+* 26x Relion XE1112 Compute Nodes each with dual Intel Xeon Scalable 20-core processor \(40 nodes per node\) and 192 GBs memory
 * 3x Relion 1900 Compute Nodes each with dual Intel Xeon 14-core processors \(28 cores per node\) and 1.5 TB memory
 * 2x Relion 1903GT Compute Nodes each with dual Intel Xeon 14-core processors \(28 cores per node\), 128 GB memory, and 3 dual GPU Tesla K80m accelerators
 * Multiple login nodes with dual Intel Xeon processors and 48 or more GBs memory
