@@ -7,7 +7,7 @@
 | t1standard | 98 | 4 days | 3-24 nodes | Default | General-purpose partition |
 | t2small | 98 | 4 days | 1-2nodes | [Tier 2](../community-condo-model/community-condo-model.md#tier2) users only. Increased priority and walltime. | Tier 2 version of t1small |
 | t2standard | 98 | 7 days | 3-48 nodes | [Tier 2](../community-condo-model/community-condo-model.md#tier2) users only. Increased priority and walltime. | Tier 2 general-purpose partition |
-| gpu | 2 | 2 days | 1-2 | For jobs using the GPUs |
+| gpu | 2 | 2 days | 1-2 nodes | | For jobs using the GPUs |
 | bio | 3 BigMem | 14 days | 1-7 threads per job |  | For high memory, low CPU jobs |
 | analysis | 3 BigMem | 4 days | 1-7 threads per job |  | For serial, post-processing and data analysis |
 | transfer | 1 | 1 day | 1 node | Shared use | Copy files between archival storage and scratch space |
