@@ -1,11 +1,12 @@
 # Table of contents
 
 * [README](README.md)
-* [RCS High Performance Computing \(HPC\) Documentation](hpc.md)
+* [RCS High Performance Computing (HPC) Documentation](hpc.md)
 
 ## Logging In
 
 * [Logging In](logging-in/logging-in.md)
+* [Linux Training/Overview](logging-in/linux-training-overview.md)
 * [Linux / Mac SSH](logging-in/linux-mac-ssh.md)
 * [Windows SSH](logging-in/windows-ssh.md)
 * [Using VNC to Login](logging-in/using-vnc-to-login.md)
@@ -29,7 +30,7 @@
 * [Third-Party Software](third-party-software/third-party-software.md)
 * [Installing Your Own Software](third-party-software/installing-your-own-software.md)
 * [Using the Software Stack](third-party-software/using-the-software-stack.md)
-* [Using Software Collections \(SCL\)](third-party-software/using-software-collections-scl.md)
+* [Using Software Collections (SCL)](third-party-software/using-software-collections-scl.md)
 * [Complier Toolchains](third-party-software/complier-toolchains.md)
 * [MPI Libraries](third-party-software/mpi-libraries.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
@@ -51,4 +52,3 @@
 ## Policies
 
 * [Policies](policies/policies.md)
-
