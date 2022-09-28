@@ -35,6 +35,7 @@
 * [MPI Libraries](third-party-software/mpi-libraries.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
 * [Singularity](third-party-software/singularity.md)
+* [Miniconda](third-party-software/miniconda.md)
 * [Jupyter](third-party-software/jupyter.md)
 
 ## Compiling Source
