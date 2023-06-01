@@ -25,7 +25,7 @@ module avail (or module av) - show all available modules to load, based on the m
 module spider moduleName - search for a specific moduleName. The output will list what needs to be loaded to be able to load the module you searched for
 module keyword - search all modules for a specific keyword
 
-#### Hierarchical Naming Scheme </a id="hierarchical-naming-scheme"></a>
+#### Hierarchical Naming Scheme <a id="hierarchical-naming-scheme"></a>
 
 Note: If you just wish to see the maximum amount of modules for our two main toolchains (intel and foss/GNU) you should run the following commands:
 
