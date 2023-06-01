@@ -25,6 +25,10 @@ We use two toolchains to build our software and generally try to build all softw
 * module spider moduleName - search for a specific moduleName. The output will list what needs to be loaded to be able to load the module you searched for
 * module keyword - search all modules for a specific keyword
 
+Loading modules will only be active for the current session you are in. Each time you log into Chinook you will need to reload any modules. If you wish to avoid this you can add any module commands to your .bashrc.
+
+You should also reload any modules in batch scripts you submit to Slurm.
+
 #### Hierarchical Naming Scheme <a id="hierarchical-naming-scheme"></a>
 
 Note: If you just wish to see the maximum amount of modules for our two main toolchains (intel and foss/GNU) you should run the following commands:
@@ -95,4 +99,3 @@ module avail
 )
 ...
 ```
-
