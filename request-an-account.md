@@ -12,7 +12,15 @@ As an existing UAF Affiliated Researcher (a UAF faculty, staff, or student with 
 
 Please be advised that in order to add the Sponsored User to an associated project, the PI must either submit this form itself, or directly approve adding them to the project.
 
-## Sponsored User or expired UA Identity
+## Sponsored Researcher (non-affiliated)
+
+A Sponsored Researcher (an external non-UA associate with **NO UA IDENTITY** or an **INACTIVE** (previous) UA Identity / Username) requires official sponsorship from an existing UAF Affiliated Researcher (Faculty only).&#x20;
+
+Please read the section below on how to create request accounts.
+
+## How to request a Sponsored Researcher Account
+
+
 
 In order to use the form above, you must have an active UA Identity and be a current UAF member/affiliate. If both of these conditions do not apply, you must request a sponsored UA Identity from the UAF Registrar or reactivate a previous UA ID. Due to the complexity of creating UA Identities through the UA System workflow, we now provide the forms directly to Sponsoring Faculty to complete.
 
