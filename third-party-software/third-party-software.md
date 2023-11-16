@@ -2,7 +2,7 @@
 
 ### Software requests
 
-THISISATESTRCS evaluates [third-party software installation requests](https://www.gi.alaska.edu/research-computing-systems/software-request) for widely-used HPC software on a case-by-case basis. Some factors that affect request eligibility are:
+RCS evaluates [third-party software installation requests](https://www.gi.alaska.edu/research-computing-systems/software-request) for widely-used HPC software on a case-by-case basis. Some factors that affect request eligibility are:
 
 * Applicability to multiple research groups
 * Complexity of the installation process

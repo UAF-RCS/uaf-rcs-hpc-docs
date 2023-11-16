@@ -34,7 +34,7 @@ You should also reload any modules in batch scripts you submit to Slurm.
 Note: If you just wish to see the maximum amount of modules for our two main toolchains (intel and foss/GNU) you should run the following commands:
 
 ```
-module load intel/2022a
+module load intel/2023a
 module avail
 ```
 
@@ -55,7 +55,7 @@ module load foss/2022a
 
 or for the Intel suite of compilers:
 
-module load intel/2022a
+module load intel/2023a
 
 and "module avail" will show all available modules build using the GCC or Intel compilers.
 
@@ -71,7 +71,7 @@ module avail
    CUDA/11.7.0            OpenSSL/1.1          foss/2022a      pkgconf/1.8.0
    GCC/11.3.0             binutils/2.38        gettext/0.21    zlib/1.2.12
    GCCcore/11.3.0         binutils/2.40 (D)    gompi/2022a
-   Java/11.0.16   (11)    bzip2/1.0.8          intel/2022a
+   Java/11.0.16   (11)    bzip2/1.0.8          intel/2023a
 ```
 
 After loading the foss toolchain:
