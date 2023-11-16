@@ -15,8 +15,8 @@
  | BCFtools | pic-intel |
  | beagle-lib | foss, pic-intel |
  | Beast | pic-intel |
- | binutils | , GCCcore |
- | Bison | , foss, GCCcore, pic-intel |
+ | binutils | GCCcore |
+ | Bison | foss, GCCcore, pic-intel |
  | BLAST+ | pic-intel |
  | Boost | pic-intel, gompi |
  | Boost.Python | gompi |
@@ -37,7 +37,7 @@
  | Ferret | foss |
  | FFmpeg | pic-intel |
  | FFTW | gompi, pic-intel |
- | flex | , foss, GCCcore, pic-intel |
+ | flex | foss, GCCcore, pic-intel |
  | flexlm  |
  | fontconfig | foss, pic-intel |
  | foss |  |
@@ -71,7 +71,7 @@
  | HDF5 | foss, pic-intel |
  | HDF5serial | foss, pic-intel |
  | HDFView  |
- | help2man | , GCCcore |
+ | help2man | GCCcore |
  | HTSlib | pic-intel |
  | hwloc | GCC |
  | icc | GCC |
@@ -101,7 +101,7 @@
  | LibUUID | foss |
  | libxml2 | foss, pic-intel, GCCcore |
  | LittleCMS | pic-intel |
- | M4 | , foss, GCCcore, pic-intel |
+ | M4 | foss, GCCcore, pic-intel |
  | makedepend | pic-intel |
  | matlab  |
  | matplotlib | pic-intel |
@@ -120,9 +120,9 @@
  | mvapich2/intel  |
  | mvapich2/pgi  |
  | NASM | pic-intel, GCCcore |
- | NCL | binary |
+ | NCL |  |
  | NCO | foss, pic-intel |
- | ncurses | , foss, pic-intel, GCCcore |
+ | ncurses | foss, pic-intel, GCCcore |
  | netCDF | foss, pic-intel |
  | netCDF-C++4 | foss, pic-intel |
  | netCDF-Fortran | foss, pic-intel |
@@ -193,4 +193,4 @@
  | XZ | foss, pic-intel, GCCcore |
  | Yasm | pic-intel |
  | YAXT | foss, pic-intel |
- | zlib | , GCCcore, foss, pic-intel |
+ | zlib | GCCcore, foss, pic-intel |
