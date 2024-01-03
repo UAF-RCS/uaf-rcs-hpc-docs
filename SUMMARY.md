@@ -38,6 +38,7 @@
 * [Singularity](third-party-software/singularity.md)
 * [Miniconda](third-party-software/miniconda.md)
 * [Jupyter](third-party-software/jupyter.md)
+* [lmod](third-party-software/lmod.md)
 
 ## Compiling Source
 
