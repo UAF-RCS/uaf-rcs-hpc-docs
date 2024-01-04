@@ -2,7 +2,7 @@
 
 ## Contents
 
-1. [Logging In](logging-in/logging-in.md)
+1. [Logging In](getting-started/logging-in.md)
 2. [Available Filesystems](available-filesystems/available-filesystems.md)
 3. [Using the Batch System](using-batch/using-the-batch-system.md)
 4. [Third-Party Software](third-party-software/third-party-software.md)

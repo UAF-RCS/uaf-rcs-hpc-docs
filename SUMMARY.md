@@ -6,11 +6,11 @@
 
 ## Logging In
 
-* [Logging In](logging-in/logging-in.md)
-* [Linux Training/Overview](logging-in/linux-training-overview.md)
-* [Linux / Mac SSH](logging-in/linux-mac-ssh.md)
-* [Windows SSH](logging-in/windows-ssh.md)
-* [Using VNC to Login](logging-in/using-vnc-to-login.md)
+* [Logging In](getting-started/logging-in.md)
+* [Linux Training/Overview](getting-started/linux-training-overview.md)
+* [Linux / Mac SSH](getting-started/linux-mac-ssh.md)
+* [Windows SSH](getting-started/windows-ssh.md)
+* [Using VNC to Login](getting-started/using-vnc-to-login.md)
 
 ## Available Filesystems
 
@@ -38,7 +38,7 @@
 * [Singularity](third-party-software/singularity.md)
 * [Miniconda](third-party-software/miniconda.md)
 * [Jupyter](third-party-software/jupyter.md)
-* [lmod](third-party-software/lmod.md)
+* [Lmod](third-party-software/lmod.md)
 
 ## Compiling Source
 
