@@ -2,14 +2,15 @@
 
 ## Contents
 
-1. [Logging In](getting-started/logging-in.md)
-2. [Available Filesystems](available-filesystems/available-filesystems.md)
-3. [Using the Batch System](using-batch/using-the-batch-system.md)
-4. [Third-Party Software](third-party-software/third-party-software.md)
-5. [Compiling from Source Code](compiling-source/compiling-from-source-code.md)
-6. [System Architecture](system-architecture/system-architecture.md)
-7. [Community Condo Model](community-condo-model/community-condo-model.md)
-8. [Policies](policies/policies.md)
+1. [Introduction](getting-started/introduction.md)
+2. [Logging In](getting-started/logging-in.md)
+3. [Available Filesystems](available-filesystems/available-filesystems.md)
+4. [Using the Batch System](using-batch/using-the-batch-system.md)
+5. [Third-Party Software](third-party-software/third-party-software.md)
+6. [Compiling from Source Code](compiling-source/compiling-from-source-code.md)
+7. [System Architecture](system-architecture/system-architecture.md)
+8. [Community Condo Model](community-condo-model/community-condo-model.md)
+9. [Policies](policies/policies.md)
 
 ## Chinook
 
