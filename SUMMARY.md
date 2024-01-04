@@ -4,7 +4,7 @@
 * [RCS High Performance Computing (HPC) Documentation](hpc.md)
 * [Request an Account](request-an-account.md)
 
-## Logging In
+## Getting Started
 
 * [Logging In](getting-started/logging-in.md)
 * [Linux Training/Overview](getting-started/linux-training-overview.md)
