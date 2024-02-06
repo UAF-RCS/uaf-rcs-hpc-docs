@@ -8,8 +8,8 @@
 
 * [Introduction](getting-started/introduction.md)
 * [Linux Training/Overview](getting-started/linux-training-overview.md)
-* [Linux / Mac SSH](getting-started/linux-mac-ssh.md)
-* [Windows SSH](getting-started/windows-ssh.md)
+* [SSH](getting-started/ssh.md)
+* [Nodes](getting-started/nodes.md)
 * [Using VNC to Login](getting-started/using-vnc-to-login.md)
 
 ## Available Filesystems
