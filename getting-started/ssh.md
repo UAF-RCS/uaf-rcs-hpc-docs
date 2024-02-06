@@ -1,6 +1,9 @@
 # Logging into Chinook with SSH
 
-## Windows SSH
+* [Windows](windows)
+* [Mac/Linux](mac-linux)
+
+## Windows SSH <a id="windows"></a>
 
 Windows users will need to download and install a third-party SSH client in order to log into Chinook. Here are a few available options:
 
@@ -73,7 +76,7 @@ This is an indication that your local X server is not running. Check the icons o
 This indicates that the server's SSH timeout was triggered. SSH servers are often configured to kill incoming connections that do not send data for a while. While you were responding to the "Unknown Host Key" popup, the remote host's connection timeout expired and it disconnected you. You should be able to reconnect without problem.
 
 
-## Linux / Mac SSH
+## Linux / Mac SSH <a id="mac-linux"></a>
 
 Linux and Mac users should use the OpenSSH client which is already installed on your computer. Open a terminal session and run the following command to connect to Chinook:
 
