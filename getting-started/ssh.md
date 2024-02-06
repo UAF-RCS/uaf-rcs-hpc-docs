@@ -1,7 +1,7 @@
 # Logging into Chinook with SSH
 
-* [Windows](windows)
-* [Mac/Linux](mac-linux)
+* [Windows](#windows)
+* [Mac/Linux](#mac-linux)
 
 ## Windows SSH <a id="windows"></a>
 
