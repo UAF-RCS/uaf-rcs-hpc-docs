@@ -1,49 +1,93 @@
 # Using the Software Stack
 
-Chinook already has builds of many third-party software packages \(see below for a listing\). There are often multiple builds of a particular software package - different versions, different compilers used to build the software, different compile-time flags, et cetera. To avoid conflicts between these many disparate package builds, Chinook employs an _environment module_ system you can use to load and unload different combinations of software packages into your environment.
+Chinook already has builds of many third-party software packages that are used by multiple projects on Chinook. There are often multiple builds of a particular software package - different versions, different compilers used to build the software, different compile-time flags, et cetera. To avoid conflicts between these many disparate package builds, Chinook employs the Lmod environment module system which you can use to load and unload different combinations of software packages into your environment.
 
-#### What are Environment Modules? <a id="environment-modules"></a>
+### What are Environment Modules? <a id="environment-modules"></a>
 
-The environment modules found on Chinook \(often referred to simply as "modules"\) are Tcl script files that are used to update shell environment variables such as `PATH`, `MANPATH`, and `LD_LIBRARY_PATH`. These variables allow your shell to discover the particular application or library as specified by the module. Some environment modules set additional variables \(such as `PYTHONPATH` or `PERL5LIB`\), while others simply load a suite of other modules.
+We use the Lmod enviornment module system on Chinook for its expanded capabilities over the Tcl environment module system. 
 
-#### Common module commands
+The environment modules found on Chinook \(often referred to simply as "modules"\) are Lua script files that are used to update shell environment variables such as `PATH`, `MANPATH`, and `LD_LIBRARY_PATH`. These variables allow your shell to discover the particular application or library as specified by the module. Some environment modules set additional variables \(such as `PYTHONPATH` or `PERL5LIB`\), while others simply load a suite of other modules.
 
-| Command | Result |
-| :--- | :--- |
-| `module avail` | list all available modules |
-| `module avail` _`pkg`_ | list all available modules **beginning** with the string _pkg_ |
-| `module load` _`pkg`_ | load a module named _pkg_ |
-| `module swap` _`oldnew`_ | attempt to replace loaded module named _old_ with one named _new_ |
-| `module unload` _`pkg`_ | unload a module named _pkg_ |
-| `module list` | list all currently-loaded modules |
-| `module purge` | unload all modules |
-| `module show` _`pkg`_ | summarize environment changes made by module named _pkg_\(sometimes incomplete\) |
+### Toolchains <a id="toolchains"></a>
 
-#### Searching for modules
+Software on chinook is built using Toolchains, which are a selection of compilers and various software, such as MPI or BLAS, that are commonly needed for software packages. Toolchains allow us to simplify our software builds and guarantees that modules that were built with the same toolchain will work together when both are loaded.
 
-Because `module avail` will search for the provided string only at the beginning of a module's fully-qualified name, it can be difficult to use `module avail` to search for modules nested in any kind of hierarchy. This is the case on Chinook - **modules are categorized, then named**. Here are some examples:
+We use two toolchains to build our software and generally try to build all software using both. These toolchains are the foss (Free Open Source Software) and intel.
 
-* `compiler/GCC/`_`version`_
-* `devel/CMake/`_`version`_
-* `math/GMP/`_`version`_
+####
 
-To find modules for GCC using a pure `module avail` command, you would need to run `module avail compiler/GCC`. This is difficult, because you must already know that the module is in the compiler category.
+### Common commands and loading modules
 
-To make things more complicated, `module avail` is also case-sensitive. Running `module avail devel/cmake` will not find the module named `devel/CMake/`_`version`_.
+* module list - will show the current modules you have loaded
+* module load moduleName/version - will load a module named moduleName, at a specific version
+* module unload moduleName/version - will unload a module
+* module avail (or module av) - show all available modules to load, based on the modules you have loaded
+* module spider moduleName - search for a specific moduleName. The output will list what needs to be loaded to be able to load the module you searched for
+* module keyword - search all modules for a specific keyword
 
-#### Better module searching
+Loading modules will only be active for the current session you are in. Each time you log into Chinook you will need to reload any modules. If you wish to avoid this you can add any module commands to your .bashrc.
 
-One workaround for these impediments is to combine `module avail` output with `grep`'s full-text case-insensitive string matching ability. The example below additionally uses [Bash file descriptor redirection](http://mywiki.wooledge.org/BashSheet#Redirection) syntax to redirect stderr to stdout because `module avail` outputs to stderr.
+You should also reload any modules in batch scripts you submit to Slurm.
 
-```text
-module avail 2>&1 | grep -i pkg
+#### Hierarchical Naming Scheme <a id="hierarchical-naming-scheme"></a>
+
+Note: If you just wish to see the maximum amount of modules for our two main toolchains (intel and foss/GNU) you should run the following commands:
+
+```
+module load intel/2023a
+module avail
 ```
 
-replacing _pkg_ with the string you are searching for.
+or
 
-RCS is currently evaluating [Lmod](https://www.tacc.utexas.edu/research-development/tacc-projects/lmod) as a replacement for Chinook's current environment modules framework. Lmod has many desirable features, including but not limited to a more user-friendly `module avail` behavior.
+```
+module load foss/2022a
+module avail
+```
 
-For more information on Chinook's module framework, please visit [http://modules.sourceforge.net/index.html](http://modules.sourceforge.net/index.html).  
-  
+Our current module setup uses a Hierarchical Naming Scheme for loading modules. Modules are presented in a hierarchy of different levels, starting from a top "core" level (typically compilers and other system software) then going to a "compiler" level (for software build with a specific compiler toolchain), followed by an "MPI" level (software build with a specific compiler + MPI toolchain).
 
+Each level will act as a "gateway" to the next level down, meaning you must load a compiler module at the "core" level to see modules at the "compiler" level with the "module avail" command.
 
+Loading a toolchain such as foss or intel will show the largest list of modules.
+
+With no modules loaded:
+
+```
+module avail
+---------------------------- /usr/share/modulefiles ----------------------------
+   pmi/pmix-x86_64    slurm/22.05.4
+
+---------------------- /usr/local/modules/easybuild/Core -----------------------
+   Bison/3.8.2            M4/1.4.19            flex/2.6.4      ncurses/6.2
+   CUDA/11.7.0            OpenSSL/1.1          foss/2022a      pkgconf/1.8.0
+   GCC/11.3.0             binutils/2.38        gettext/0.21    zlib/1.2.12
+   GCCcore/11.3.0         binutils/2.40 (D)    gompi/2022a
+   Java/11.0.16   (11)    bzip2/1.0.8          intel/2023a
+```
+
+After loading the foss toolchain:
+```
+module load foss/2022a
+module avail
+---------- /usr/local/modules/easybuild/MPI/GCC/11.3.0/OpenMPI/4.1.4 -----------
+   AUGUSTUS/3.5.0          RMBlast/2.13.0
+   BLAST+/2.13.0           RepeatMasker/4.1.4
+   Boost.MPI/1.79.0        ScaLAPACK/2.2.0-fb             (L)
+   CDO/2.0.5               SciPy-bundle/2022.05
+   ESMF/8.3.0              SuiteSparse/5.13.0-METIS-5.1.0
+   FFTW.MPI/3.3.10  (L)    ecCodes/2.24.2
+   GDAL/3.5.0              h5py/3.7.0
+   HDF5/1.13.1             mpi4py/3.1.4
+   HMMER/3.3.2             ncview/2.1.8
+   MAKER/3.01.04           netCDF-C++4/4.3.1
+   NCO/5.0.3               netCDF-Fortran/4.5.4
+   R/4.2.2                 netCDF/4.9.0
+
+--------------- /usr/local/modules/easybuild/Compiler/GCC/11.3.0 ---------------
+   BCFtools/1.17      FFTW/3.3.10     (L)    OpenBLAS/0.3.20   (L
+)
+   BLIS/0.9.0         FlexiBLAS/3.2.0 (L)    OpenMPI/4.1.4     (L
+)
+...
+```

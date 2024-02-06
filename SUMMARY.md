@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-* [Logging In](getting-started/logging-in.md)
+* [Introduction](getting-started/introduction.md)
 * [Linux Training/Overview](getting-started/linux-training-overview.md)
 * [Linux / Mac SSH](getting-started/linux-mac-ssh.md)
 * [Windows SSH](getting-started/windows-ssh.md)
