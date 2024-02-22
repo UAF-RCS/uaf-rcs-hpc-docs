@@ -25,4 +25,8 @@ Compute nodes are where computation is performed and are accessed through the [j
 
 ## Analysis/Bio Nodes
 
+Compute nodes with more memory (RAM) than a standard compute node. The amount of cores (CPUs) available on these nodes are restricted, so these nodes are used for jobs with low CPU usage but higher memory requirements.
+
 ## GPU Nodes
+
+Compute nodes with a GPU (Graphical Processing Unit) to be used with GPU-accelerated software that makes use of APIs such as CUDA.
