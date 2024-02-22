@@ -18,7 +18,6 @@
 
 ## Using Batch
 
-* [Using the Batch System](using-batch/using-the-batch-system.md)
 * [Batch Overview](using-batch/batch-overview.md)
 * [Available Partitions](using-batch/available-partitions.md)
 * [Common Slurm Commands](using-batch/common-slurm-commands.md)
@@ -33,7 +32,6 @@
 * [Using the Software Stack](third-party-software/using-the-software-stack.md)
 * [Using Software Collections (SCL)](third-party-software/using-software-collections-scl.md)
 * [Complier Toolchains](third-party-software/complier-toolchains.md)
-* [MPI Libraries](third-party-software/mpi-libraries.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
 * [Singularity](third-party-software/singularity.md)
 * [Miniconda](third-party-software/miniconda.md)
