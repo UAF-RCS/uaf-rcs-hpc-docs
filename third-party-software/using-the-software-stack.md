@@ -14,6 +14,8 @@ Software on chinook is built using Toolchains, which are a selection of compiler
 
 We use two toolchains to build our software and generally try to build all software using both. These toolchains are the foss (Free Open Source Software) and intel.
 
+RCS will make a best effort attempt to keep the same software installed for both toolchains.
+
 ####
 
 ### Common commands and loading modules

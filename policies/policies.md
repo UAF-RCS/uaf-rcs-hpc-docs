@@ -21,7 +21,7 @@ If additional resources are required beyond what is subsidized, PIs should reque
 
 ### **General Policies**
 
-Users of RCS systems agree to abide by published UAF policies and standards: [http://www.alaska.edu/oit/services/policies-and-standards](http://www.alaska.edu/oit/services/policies-and-standards). Every user of RCS systems may rightfully expect their programs, data, and documents stored on RCS systems to be inaccessible by others, secure against arbitrary loss or alteration, and available for use at all times. To help protect system security and achieve this goal, RCS staff reserve the right to routinely examine user accounts. In the event of a suspected security incident, RCS staff may inactivate and examine the contents of user accounts without prior notification.
+Users of RCS systems agree to abide by published UAF policies and standards: [https://www.uaf.edu/nooktech/policies-standards/index.php](https://www.uaf.edu/nooktech/policies-standards/index.php). Every user of RCS systems may rightfully expect their programs, data, and documents stored on RCS systems to be inaccessible by others, secure against arbitrary loss or alteration, and available for use at all times. To help protect system security and achieve this goal, RCS staff reserve the right to routinely examine user accounts. In the event of a suspected security incident, RCS staff may inactivate and examine the contents of user accounts without prior notification.
 
 ### **Account Sharing**
 
@@ -78,7 +78,7 @@ User accounts will be deactivated after a year of inactivity. RCS will notify th
 
 * Monthly: First Wednesday for non-interrupt Operating System security and Scyld ClusterWare updates
 * Quarterly: First Wednesday of Jan, Apr, Jul, and Oct for Operating System and Scyld ClusterWare updates that may require system downtime
-* Twice per year: The month of May during the [FAST](https://www.alaska.edu/google/fast/) and over the winter closure for Operating System and Scyld ClusterWare updates that may require system downtime
+* Twice per year: The month of May during the Facility Annual Systems Testing and over the winter closure for Operating System and Scyld ClusterWare updates that may require system downtime
 
 ## Policy Enforcement
 

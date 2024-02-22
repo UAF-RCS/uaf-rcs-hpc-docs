@@ -2,10 +2,11 @@
 
 Compiler toolchains are modules that bundle together a set of compiler, MPI, and numerical library modules. To use a compiler toolchain, load the compiler toolchain module and all the submodules will be loaded. This will set variables such as PATH, CPATH, LIBRARY\_PATH, LD\_LIBRARY\_PATH, and others. Other variable conventions such as CC and CXX are not automatically defined.
 
-Since Chinook is an Intel-based HPC cluster, RCS defaults to compiling software using Intel-based compiler toolchains.
+RCS defaults to a best effort attempt to install software for both the FOSS (Free Open Source Software) and Intel toolchains.
+
+Two MPI libraries are provided, OpenMPI for the foss toolchain and Intel MPI for the intel toolchain.
 
 | Toolchain Name | Version | Comprises |
 | :--- | :--- | :--- |
-| foss | 2016b | GNU Compiler Collection 5.4.0, Penguin-modified OpenMPI 1.10.2, OpenBLAS 0.2.18, FFTW 3.3.4, ScaLAPACK 2.0.2 |
-| pic-intel | 2016b | Intel Compiler Collection 2016.3.210 \(2016 update 3\), Penguin-modified OpenMPI 1.10.6, Intel Math Kernel Library \(MKL\) 11.3.3.210 |
-
+| foss | 2022a | GCCcore 11.3.0, OpenMPI 4.1.4, OpenBLAS 0.3.20, FFTW 3.3.10, ScaLAPACK 2.2.0 |
+| intel | 2023a | GCCcore 12.3.0, Intel MPI 2021.9.0, Intel Math Kernel Library 2023.1.0 |

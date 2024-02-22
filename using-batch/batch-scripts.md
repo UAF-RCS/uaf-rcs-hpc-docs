@@ -55,16 +55,12 @@ ulimit -l unlimited
 # Load any desired modules, usually the same as loaded to compile
 . /etc/profile.d/modules.sh
 module purge
-module load toolchain/pic-intel/2016b
+module load toolchain/intel/2023
 module load slurm
 
 cd $SLURM_SUBMIT_DIR
-# Generate a list of allocated nodes; will serve as a machinefile for mpirun
-srun -l /bin/hostname | sort -n | awk '{print $2}' > ./nodes.$SLURM_JOB_ID
 # Launch the MPI application
-mpirun -np $SLURM_NTASKS -machinefile ./nodes.$SLURM_JOB_ID ./<APPLICATION>
-# Clean up the machinefile
-rm ./nodes.$SLURM_JOB_ID
+mpirun -np $SLURM_NTASKS ./<APPLICATION>
 ```
 
 * &lt;APPLICATION&gt;: The executable to run in parallel
