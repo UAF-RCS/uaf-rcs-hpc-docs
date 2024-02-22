@@ -14,7 +14,7 @@ The following protocols for transferring files are supported on Chinook:
 ## $HOME  <a id="home"></a>
 
 * The $HOME filesystem is accessible from the Chinook login and compute nodes, and bigdipper.alaska.edu.
-* Default $HOME quota: 10 GB
+* Default $HOME quota: 50 GB
 * The $HOME filesystem is backed up regularly.
 
 ## $CENTER1  <a id="center"></a>
