@@ -4,6 +4,8 @@ High Performance Computing (HPC) is a method to use multi-processor computing to
 
 For more information on nodes please see our [nodes overview](./nodes.md).
 
+To access the cluster you will need to use a `SSH client`, which allows you to remotely access the cluster. To learn more about SSH please see [Logging In](#logging-in).
+
 The general process for running a job on Chinook is as follows:
 
 * Verify that your code can make use of parallel processing, such as by being able to run multiple instances of your code at the same time, it makes of multi-core APIs (such as OpenMP), or makes use of multi-node APIs (such as MPI).
