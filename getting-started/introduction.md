@@ -8,7 +8,7 @@ To access the cluster you will need to use a `SSH client`, which allows you to r
 
 The general process for running a job on Chinook is as follows:
 
-* Verify that your code can make use of parallel processing, such as by being able to run multiple instances of your code at the same time, it makes of multi-core APIs (such as OpenMP), or makes use of multi-node APIs (such as MPI).
+* Verify that your code can make use of parallel processing, such as by being able to run multiple instances of your code at the same time, it uses multi-core APIs (such as OpenMP), or makes use of multi-node APIs (such as MPI).
 * Copy your code or program and data from your local computer to Chinook via a login or data mover node
 * Recompile or verify that your code or program runs on Chinook
 * Create a batch script to run your job on the compute nodes
