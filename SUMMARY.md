@@ -11,6 +11,7 @@
 * [SSH](getting-started/ssh.md)
 * [Nodes](getting-started/nodes.md)
 * [Using VNC to Login](getting-started/using-vnc-to-login.md)
+* [Migrating to the New Environment](getting-started/migration.md)
 
 ## Available Filesystems
 
