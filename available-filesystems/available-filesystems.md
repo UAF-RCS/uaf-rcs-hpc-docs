@@ -20,7 +20,7 @@ The following protocols for transferring files are supported on Chinook:
 ## $CENTER1  <a id="center"></a>
 
 * **$CENTER1 is a scratch storage space and is not backed up.** For long term storage please copy your files off of $CENTER1.
-* The $CENTER1 scratch filesystem is accessible from the Chinook login and compute nodes, and bigdipper.rcs.alaska.edu.
+* The $CENTER1 scratch filesystem is accessible from the Chinook login and compute nodes, and bigdipper.alaska.edu.
 * The path to user directories on $CENTER1 is /center1/PROJECTID/UAusername
 * Files are not purged on $CENTER1, but project quotas are in effect.
 * Default $CENTER1 quotas are set to 1 TB **per project**. All project users share this quota.

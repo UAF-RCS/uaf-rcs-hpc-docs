@@ -33,7 +33,7 @@ Chinook is a shared resource and users are asked to be neighborly to your fellow
 * The login nodes are only to be used for compiling and modifying applications/workflows, managing data between the mounted filesystems and managing jobs
 * Computationally intensive work is to be done on the [compute nodes](../using-batch/using-the-batch-system.md).
 * Run code in the debug queue before submitting it to the small, standard, bio, or analysis partition to ensure that it works correctly and utilizes all the resources available to the job
-* Jobs that are serial in nature or interactive, such as non parallel MATLAB scfripts, should be run in the bio or analysis partition to ensure maximum utilization of our limited resources
+* Jobs that are serial in nature or interactive, such as non parallel MATLAB scripts, should be run in the bio or analysis partition to ensure maximum utilization of our limited resources
 * Jobs submitted to the bio or analysis partition must include the amount of memory the job will use (#SBATCH --mem=\<size\[units]>)
 * Include a time limit in your batch scripts to help improve the performance of the scheduler in prioritizing jobs
 

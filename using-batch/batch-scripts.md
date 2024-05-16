@@ -1,6 +1,8 @@
 # Batch Scripts
 
-Batch scripts are plain-text files that specify a job to be run. They consist of batch scheduler \(Slurm\) directives which specify the resources requested for the job, followed by a script used to successfully run a program.
+Batch scripts are plain-text files that specify a job to be run. They consist of batch scheduler \(Slurm\) directives which specify the resources requested for the job, followed by a script used to successfully run a program. These are typically bash or csh scripts and can make use of any features available to those shells.
+
+The first part of a batch script are the _#SBATCH Directives_ which are used to pass parameters to the Slurm Job Scheduler to set options for the job, such as time limit, partition, and number of nodes and cores. _sbatch_ will process #SBATCH directives
 
 Here is a simple example of a batch script that will be accepted by Slurm on Chinook:
 
