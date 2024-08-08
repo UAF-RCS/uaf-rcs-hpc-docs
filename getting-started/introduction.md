@@ -13,6 +13,8 @@ The general process for running a job on Chinook is as follows:
 * Recompile or verify that your code or program runs on Chinook
 * Create a batch script to run your job on the compute nodes
 * Submit the batch script to the job scheduler from a login node
+    * You must load the slurm module to interact with the job scheduler
+    * module load slurm
 
 # Linux
 
