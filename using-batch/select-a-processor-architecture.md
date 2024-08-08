@@ -11,7 +11,7 @@ The three micro-architectures which translate to a node type are:
 1. [Haswell](https://en.wikipedia.org/wiki/Haswell_%28microarchitecture%29)
 2. [Broadwell](https://en.wikipedia.org/wiki/Broadwell_%28microarchitecture%29)
 3. [Skylake](https://en.wikipedia.org/wiki/Skylake_%28microarchitecture%29) / [Cascade Lake](https://en.wikipedia.org/wiki/Cascade_Lake_%28microarchitecture%29)
-
+4. [Sapphire](https://en.wikipedia.org/wiki/Sapphire_Rapids)
 To select a specific node type, use the "--constraint" option of the `sbatch` or `srun` commands. Multiple choices may be specified with the OR operator. 
 
 Example 1, request a job run only on Skylake/Cascade Lake nodes:
