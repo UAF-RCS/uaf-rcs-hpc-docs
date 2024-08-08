@@ -10,9 +10,9 @@ RCS evaluates [third-party software installation requests](https://www.gi.alaska
 
 If a third-party software installation request is found to be a viable candidate for installation, RCS may elect to install the software through one of several means:
 
+* Source build
 * RPM
 * Binary \(pre-built\) distribution
-* Source build
 
 If an application or library is available through standard RPM repositories \(Penguin Computing, CentOS, EPEL, ...\) then the RPM may be installed. Users should test the installed software to determine if it meets requirements. If the RPM version does not meet needs, please contact RCS to have alternate installation methods evaluated.
 
