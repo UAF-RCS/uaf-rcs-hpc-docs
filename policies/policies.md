@@ -10,7 +10,7 @@ PIs are responsible for all activities relating to their project, including the 
 
 Each PI is given the following subsidized resources to share across all projects:
 
-* 10 TB of tape storage on $ARCHIVE
+* 30 TB of tape storage on $ARCHIVE
 * 1 virtual machine
 
 ### **Additional Resources**
