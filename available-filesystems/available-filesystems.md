@@ -63,7 +63,7 @@ $ du -sh /center1/RCSCLASS/uaguest_rclass1/data
 53K /center1/RCSCLASS/uaguest_rclass1/data
 ```
 
-In the $ARCHIVE and $ONLINE directories you must use the `sdu` command can be used to display how much storage is being used by specific directories. `sdu -h /archive/PROJECTID/path/to/directory` will list the storage used by each directory in `/archive/PROJECTID/path/to/directory`
+In the $ARCHIVE and $ONLINE directories you must use the `sdu` command. This command can be used to display how much storage is being used by specific directories. `sdu -h /archive/PROJECTID/path/to/directory` will list the storage used by each directory in `/archive/PROJECTID/path/to/directory`
 
 ```text
 $ sudo sdu -h /archive/RCSCLASS/
