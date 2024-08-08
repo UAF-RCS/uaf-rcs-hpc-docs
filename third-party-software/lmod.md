@@ -2,20 +2,6 @@
 
 Chinook already has builds of many third-party software packages that are used by multiple projects on Chinook. There are often multiple builds of a particular software package - different versions, different compilers used to build the software, different compile-time flags, et cetera. To avoid conflicts between these many disparate package builds, Chinook employs the Lmod environment module system which you can use to load and unload different combinations of software packages into your environment.
 
-### What are Environment Modules? <a id="environment-modules"></a>
-
-We use the Lmod enviornment module system on Chinook for its expanded capabilities over the Tcl environment module system. 
-
-The environment modules found on Chinook \(often referred to simply as "modules"\) are Lua script files that are used to update shell environment variables such as `PATH`, `MANPATH`, and `LD_LIBRARY_PATH`. These variables allow your shell to discover the particular application or library as specified by the module. Some environment modules set additional variables \(such as `PYTHONPATH` or `PERL5LIB`\), while others simply load a suite of other modules.
-
-### Toolchains <a id="toolchains"></a>
-
-Software on chinook is built using Toolchains, which are a selection of compilers and various software, such as MPI or BLAS, that are commonly needed for software packages. Toolchains allow us to simplify our software builds and guarantees that modules that were built with the same toolchain will work together when both are loaded.
-
-We use two toolchains to build our software and generally try to build all software using both. These toolchains are the foss (Free Open Source Software) and intel.
-
-####
-
 ### Common commands and loading modules
 
 * module list - will show the current modules you have loaded
@@ -27,7 +13,19 @@ We use two toolchains to build our software and generally try to build all softw
 
 Loading modules will only be active for the current session you are in. Each time you log into Chinook you will need to reload any modules. If you wish to avoid this you can add any module commands to your .bashrc.
 
-You should also reload any modules in batch scripts you submit to Slurm.
+You should also make sure to load any modules in batch scripts you submit to Slurm.
+
+### What are Environment Modules? <a id="environment-modules"></a>
+
+We use the Lmod enviornment module system on Chinook for its expanded capabilities over the Tcl environment module system. 
+
+The environment modules found on Chinook \(often referred to simply as "modules"\) are Lua script files that are used to update shell environment variables such as `PATH`, `MANPATH`, and `LD_LIBRARY_PATH`. These variables allow your shell to discover the particular application or library as specified by the module. Some environment modules set additional variables \(such as `PYTHONPATH` or `PERL5LIB`\), while others simply load a suite of other modules.
+
+### Toolchains <a id="toolchains"></a>
+
+Software on chinook is built using Toolchains, which are a selection of compilers and various software, such as MPI or BLAS, that are commonly needed for software packages. Toolchains allow us to simplify our software builds and guarantees that modules that were built with the same toolchain will work together when both are loaded.
+
+We use two toolchains to build our software and generally try to build all software using both. These toolchains are the foss (Free Open Source Software) and intel.
 
 #### Hierarchical Naming Scheme <a id="hierarchical-naming-scheme"></a>
 

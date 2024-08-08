@@ -91,9 +91,6 @@ This script will bind $CENTER1 to /mnt/center1 inside the Singularity container 
 
 #### Creating Images
 
-One advantage to Singularity as a container solution is that Singularity does not require admin access to run. Therefore users, if needed, and create or obtain images themselves to run on Chinook. Please note that due to the operating system on Chinook that Singularity images that are based on the newest OSes may not work. We recommend that Singularity images be built on:
-* Ubuntu 14 (trusty) or Ubuntu 16 (xenial)
-* Debian 7 (wheezy) or 8 (jessie)
-* RHEL7
+One advantage to Singularity as a container solution is that Singularity does not require admin access to run. Therefore users, if needed, and create or obtain images themselves to run on Chinook.
 
 Images will need to be created on a system that the user has Administrator access to and **users cannot create Singularity images on Chinook itself**. Information on building a container can be located [via Singularity's documentation](https://sylabs.io/guides/3.2/user-guide/build_a_container.html)
