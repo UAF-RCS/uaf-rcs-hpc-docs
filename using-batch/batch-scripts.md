@@ -2,7 +2,17 @@
 
 Batch scripts are plain-text files that specify a job to be run. They consist of batch scheduler \(Slurm\) directives which specify the resources requested for the job, followed by a script used to successfully run a program. These are typically bash or csh scripts and can make use of any features available to those shells.
 
+
+## Slurm Job Scheduler Configuration
+
 The first part of a batch script are the _#SBATCH Directives_ which are used to pass parameters to the Slurm Job Scheduler to set options for the job, such as time limit, partition, and number of nodes and cores. _sbatch_ will process #SBATCH directives
+
+To successfully submit a job to the queue using the Slurm Job Scheduler, the following parameters must be specified within your batch script:
+- **--ntasks**: This parameter defines the total number of tasks that your job will execute. It is mandatory for job submission.
+
+- **--nodes** or **--tasks-per-node**: At least one of these parameters must be specified:
+  - **--nodes**: indicates the number of nodes on which the job should run.
+  - **--tasks-per-node**: specifies how many tasks should run on each node.
 
 Here is a simple example of a batch script that will be accepted by Slurm on Chinook:
 
