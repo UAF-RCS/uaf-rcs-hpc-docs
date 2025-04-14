@@ -12,7 +12,7 @@ MAC users can use the built in Apple "Screen Sharing" as a VNC client and do not
 
 ### A. Launch a VNC Desktop Session
 
-1. Login to an RCS system via SSH. The host name is $HOST in the steps below.
+1. Login to a remote system via SSH. The host name is $HOST in the steps below.
 2. Set a VNC password (six to eight characters):\
    `$ vncpasswd`
 3. Launch the session:\
@@ -53,7 +53,7 @@ If Gnome is the preferred desktop, use /usr/bin/gnome-session instead of /usr/bi
 5. Enter localhost::59000 for the remote host and click Connect.
 6. Enter the VNC password set in step A.2 above and click OK. A window with your personal desktop on the remote host should open.
 
-### When Finished, Close the VNC Session <a href="#vncstep5" id="vncstep5"></a>
+### When Finished, Close the VNC Desktop Session <a href="#vncstep5" id="vncstep5"></a>
 
 The remote desktop window can be closed at any time. Exit the SSH tunnel session then close the remote desktop window. This does not interrupt the remote desktop session. It will remain until you log out from it or the workstation is rebooted. To reconnect to the remote desktop session, repeat the steps in section B, C, or D. A screen lock may be enabled when you reconnect. Enter your UA password to unlock. To close your VNC session, view the open sessions on the remote system, then close the appropriate one.
 
