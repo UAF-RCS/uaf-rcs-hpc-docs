@@ -4,13 +4,11 @@ To run graphical applications remotely, the Virtual Network Computing (VNC) appl
 
 \*\*\*Important Note: Please follow all of these steps with each new VNC session.\*\*\*
 
-### &#x20;Install VNC on your local system <a href="#vncstep1" id="vncstep1"></a>
+### Install VNC on your local system
 
 There are multiple VNC viewer programs available with unique interfaces and features. The application on RCS systems is TigerVNC.
 
 MAC users can use the built in Apple "Screen Sharing" as a VNC client and do not have to install an additional client.
-
-After installing the software, make sure ports 5900 and 5901 are open to allow VNC traffic through your host firewall.
 
 ### A. Launch a VNC Desktop Session
 
