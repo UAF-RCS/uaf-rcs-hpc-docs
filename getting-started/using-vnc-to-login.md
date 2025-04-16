@@ -30,7 +30,7 @@ If Gnome is the preferred desktop, use /usr/bin/gnome-session instead of /usr/bi
 2. In a Terminal window, establish an SSH tunnel:\
    `$ ssh -L 59000:localhost:$RPORT -C $HOST`
 3. In Finder, launch the remote desktop client by choosing Go->Connect to Server from the menu or press Cmd-K.
-4. Enter vnc://localhost:59001 for the server and click Connect.
+4. Enter vnc://localhost:59000 for the server and click Connect.
 5. Enter the VNC password set in step A.2 above and click Sign In. A window with your personal desktop on the remote host should open.
 
 ### C. Connect VNC Client from Linux Using an SSH Tunnel
@@ -40,7 +40,7 @@ If Gnome is the preferred desktop, use /usr/bin/gnome-session instead of /usr/bi
 3. In an Xterm window, establish an SSH tunnel:\
    `$ ssh -L 59000:localhost:$RPORT -C $HOST`
 4. In a second Xterm window, launch the VNC viewer:\
-   `$ vncviewer localhost::59001`
+   `$ vncviewer localhost::59000`
 5. Enter the VNC password set in step A.2 above and click Sign In. A window with your personal desktop on the remote host should open.
 
 ### D. Connect VNC Client from Windows Using an SSH Tunnel
