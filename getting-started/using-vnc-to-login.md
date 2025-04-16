@@ -6,9 +6,7 @@ To run graphical applications remotely, the Virtual Network Computing (VNC) appl
 
 ### Install VNC on your local system
 
-There are multiple VNC viewer programs available with unique interfaces and features. The application on RCS systems is TigerVNC.
-
-MAC users can use the built in Apple "Screen Sharing" as a VNC client and do not have to install an additional client.
+There are multiple VNC viewer programs available with unique interfaces and features. The application on RCS systems is TigerVNC ([https://tigervnc.org/](https://tigervnc.org/)). TigerVNC clients are available for Linux and Windows. Mac users can use the built in Apple "Screen Sharing" as a VNC client and do not have to install an additional client.
 
 ### A. Launch a VNC Desktop Session
 
