@@ -18,10 +18,12 @@ In 2015, the Geophysical Institute launched Chinook as an energy efficient linux
 
 Chinook is the foundation for an energy-efficient, condo-style HPC cluster for UA researchers. The computing environment hosted on Chinook includes:
 
-* 105x Relion 1900 Compute Nodes each with dual Intel Xeon 12- or 14-core processors \(24 or 28 cores per node\) and 128 GB memory
-* 26x Relion XE1112 Compute Nodes each with dual Intel Xeon Scalable 20-core processor \(40 cores per node\) and 192 GBs memory
+* 67x Relion 1900 Compute Nodes each with dual Intel Xeon 14-core processors \(28 cores per node\) and 128 GB memory
+* 38x Relion XE1112 Compute Nodes each with dual Intel Xeon Scalable 20-core processor \(40 cores per node\) and 192 GBs memory
+* 13x Relion XE1312 Compute Nodes each with dual Intel Xeon 24-core processors \(48 cores per node\) and 256 GBs memory
 * 3x Relion 1900 Compute Nodes each with dual Intel Xeon 14-core processors \(28 cores per node\) and 1.5 TB memory
-* 2x Relion 1903GT Compute Nodes each with dual Intel Xeon 14-core processors \(28 cores per node\), 128 GB memory, and 3 dual GPU Tesla K80m accelerators
+* 5x Altus XE2318GT-AIR Compute Nodes each with dual AMD EPYC 24-core processors \(48 cores per node\), 1 TB memory, and 8x NVIDIA L40S GPU accelerators
+* 1x Altus XE5318 Compute Node with dual AMD EPYC 24-core processors \(48 cores per node\), 1 TB memory, and 8x NVIDIA H100 GPU accelerators
 * Multiple login nodes with dual Intel Xeon processors and 48 or more GBs memory
 * CentOS operating system, Slurm open-source workload management software, and Scyld ClusterWare HPC management software
 * Compute and login node access to the 307 TB Lustre scratch file system
