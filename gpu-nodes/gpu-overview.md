@@ -29,7 +29,7 @@ Unlike the CPU nodes (nodes in the debug, small, and standard partitions) the GP
 There are two GPU partitions:
 
 | Name | Node Count | Max Walltime | GPUs per node | Rules | GPU Type | SBATCH directive |
-| :--- | :--- | :---| :--- | :--- | :--- |
+| :--- | :--- | :---| :--- | :--- | :--- | :--- |
 | l40s | 4 | 2 days | 8 | Only request the number of GPUs your code uses | L40S | --partition=l40s --gpus=$NUMBER_OF_GPUS --mem-per-gpu=$MEMORY |
 | h100 | 1 | 2 days | 8 | Only request the number of GPUs your code uses | H100 | --partition=h100 --gpus=$NUMBER_OF_GPUS --mem-per-gpu=$MEMORY |
 
