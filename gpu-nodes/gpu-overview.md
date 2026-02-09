@@ -185,7 +185,7 @@ Thu Feb  5 15:30:14 2026
 
 Often tools or programs that you run may also have methods of checking whether GPUs are available.
 
-PyTorch, a commonly used deep learning framework, has these the **torch.cuda.is_available()** and **torch.cuda.get_device_properties()** functions which may be valuable to run either as a standalone test at the beginning of your batch script or as part of your PyTorch run:
+PyTorch, a commonly used deep learning framework, has the **torch.cuda.is_available()** and **torch.cuda.get_device_properties()** functions which may be valuable to run either as a standalone test at the beginning of your batch script or as part of your PyTorch run:
 
 ```
 # checkGPUs.py
