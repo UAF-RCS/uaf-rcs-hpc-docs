@@ -39,6 +39,9 @@
 * [Jupyter](third-party-software/jupyter.md)
 * [Lmod](third-party-software/lmod.md)
 
+## GPU Nodes
+* [GPU Overview](gpu-nodes/gpu-overview.md)
+
 ## Compiling Source
 
 * [Compiling from Source Code](compiling-source/compiling-from-source-code.md)

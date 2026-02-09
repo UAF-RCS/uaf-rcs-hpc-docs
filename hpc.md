@@ -11,7 +11,7 @@
 7. [System Architecture](system-architecture/system-architecture.md)
 8. [Community Condo Model](community-condo-model/community-condo-model.md)
 9. [Policies](policies/policies.md)
-
+10. [GPU Nodes](gpu-nodes/gpu-overview.md)
 ## Chinook
 
 In 2015, the Geophysical Institute launched Chinook as an energy efficient linux cluster purchased from [Penguin Computing, Inc](http://www.penguincomputing.com/). Chinook is named in honor of long time GI colleague Kevin Engle's unique, strong, collaborative nature and passion for salmon and Alaska. Chinook is made possible by the Geophysical Institute, IARC, the Institute of Arctic Biology, the Vice Chancellor of Research, and your fellow colleagues who contribute shares. In 2016 and 2017, Chinook expansions were also supported with funding from the M. J. Murdock Charitable Trust.
