@@ -6,7 +6,7 @@ Chinook has the following GPU nodes available:
 * 4x Altus XE2318GT-AIR Compute Nodes each with dual AMD EPYC 24-core processors \(48 cores per node\), 1.5 TB memory, and 8x NVIDIA L40S GPU accelerators, with 48GB GPU memory each
 * 1 x Altus XE5318 Compute Node with dual AMD EPYC 24-core processors \(48 cores per node\), 1.5 TB memory, and 8x NVIDIA H100 GPU accelerators with 80GB GPU memory each
 
-*Due to the limited amount of GPU resources available to the Chinook cluster, RCS will be monitoring misuse of the GPU login node or jobs that request GPU resources but leave the GPUs idle during running. RCS will terminate jobs that or processes are not using allocated GPU resources to maximise access to GPU resources.*
+*Due to the limited amount of GPU resources available to the Chinook cluster, RCS will be monitoring misuse of the GPU login node or jobs that request GPU resources but leave the GPUs idle during running. RCS will terminate jobs or processes that are not using allocated GPU resources to maximise access to GPU resources.*
 
 ## Usage
 
