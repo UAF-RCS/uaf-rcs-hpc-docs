@@ -130,11 +130,11 @@ nvidia-smi
 
 ### Login Node
 
-The GPU login node, chinookgpu.alaska.edu, is intended to provide access to the cluster, to compile and modify applications and workflows, to manage data between mounted filesystems, and to manage jobs. All processing should be very limited and short to avoid impacting other users' activities. Any processing should should be done in [Batch](../using-batch/using-the-batch-system.md) or [interactive](../using-batch/interactive-jobs.md) modes using the **l40s** or **h100** partitions. RCS reserves the right to terminate user processes or sessions to maintain the normal working order of the login node and the cluster.
+The GPU login node, chinookgpu.alaska.edu, is intended to provide access to the cluster, to compile and modify applications and workflows, to manage data between mounted filesystems, and to manage jobs. All processing should be very limited and short to avoid impacting other users' activities. Any processing should be done in [Batch](../using-batch/using-the-batch-system.md) or [interactive](../using-batch/interactive-jobs.md) modes using the **l40s** or **h100** partitions. RCS reserves the right to terminate user processes or sessions to maintain the normal working order of the login node and the cluster.
 
 ### GPU Compute Nodes
 
-The GPU compute nodes are where computation is performed and accessed through the [job scheduler](../using-batch/batch-overview.md). Each GPU Compute node have 8 GPUs available to them and are **shared**, which means multiple users can make use of the same node at the same time. Chinook has two GPU types available: the L40S and the H100
+The GPU compute nodes are where computation is performed and accessed through the [job scheduler](../using-batch/batch-overview.md). Each GPU Compute node have 8 GPUs available to them and are **shared**, which means multiple users can make use of the same node at the same time. Chinook has two GPU types available: the L40S and the H100.
 
 ### L40S Nodes
 
@@ -195,7 +195,7 @@ for i in range(torch.cuda.device_count()):
      print(torch.cuda.get_device_properties(i).name)
 ```
 
-which should display the whether or not CUDA is available and how many of each GPUs it has available:
+which should display whether or not CUDA is available and how many of each GPUs it has available:
 
 ```
 # Output of checkGPUs.py
