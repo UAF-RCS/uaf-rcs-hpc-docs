@@ -142,7 +142,7 @@ The L40S GPU are more suited for small-model training, inference and fine-tuning
 
 ### H100 Nodes
 
-The H100 GPU are suit for medium to large AI model training, as well as fine-tuning medium to large models. They can handle Floating Point 64-bit operations and are suited for large-scale simulations and deep learning applications that may need more computational power. The H100 also has 80GB of GPU memory.
+The H100 GPU are suited for medium to large AI model training, as well as fine-tuning medium to large models. They can handle Floating Point 64-bit operations and are suited for large-scale simulations and deep learning applications that may need more computational power. The H100 also has 80GB of GPU memory.
 
 ## GPU Usage Verification
 
