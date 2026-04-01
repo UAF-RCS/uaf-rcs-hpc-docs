@@ -34,7 +34,7 @@
 * [Using Software Collections (SCL)](third-party-software/using-software-collections-scl.md)
 * [Complier Toolchains](third-party-software/complier-toolchains.md)
 * [Maintained Software Packages](third-party-software/maintained-software-packages.md)
-* [Singularity](third-party-software/singularity.md)
+* [Apptainer](third-party-software/apptainer.md)
 * [Miniconda](third-party-software/miniconda.md)
 * [Jupyter](third-party-software/jupyter.md)
 * [Lmod](third-party-software/lmod.md)
