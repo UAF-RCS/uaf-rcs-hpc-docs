@@ -24,11 +24,11 @@ In order to use the form above, you must have an active UA Identity and be a cur
 
 To request an account, the Sponsoring Faculty will need to complete the following forms in this order:
 
-1. Request a UA User Account be generated from the UAF Registrar: [Affiliate Identity Request (Sponsored User Form)](https://nextgensso.com/sp/startSSO.ping?PartnerIdpId=urn:mace:incommon:alaska.edu\&TargetResource=https://dynamicforms.ngwebsolutions.com/Submit/Form/Start/78a2640e-f87a-4a67-b8ec-6ddd30608e30)
-2. Submit a ticket with OIT to configure the new account: [Existing Account Help - Modify Account Access](https://service.alaska.edu/TDClient/39/Portal/Requests/TicketRequests/NewForm?ID=PYp7B91BWaE\_\&RequestorType=ServiceOffering\&SIDs=130)
-   * Have the Sponsored User set their UA Account Password by hitting the "Forgot Password" link on OIT's website once OIT completes your request: [ELMO - Easy Login Maintenance Option](https://elmo.alaska.edu/)
-   * If they run into issues using this service, please have them contact OIT directly at [907-450-8300](tel:907-370-3015)
-3. Submit a request for an RCS User Account: [RCS User Account Application](https://www.gi.alaska.edu/form/user-account-application-rcs-)
+1. Submit a ticket with NTS to create the UA Identity: [Affiliate Account Request] (https://service.alaska.edu/TDClient/39/Portal/Requests/TicketRequests/NewForm?ID=276&RequestorType=ServiceOffering)
+OR if the account already exists then submit a ticket with NTS to reactivate the UA identity: [Modify Account Access] (https://service.alaska.edu/TDClient/39/Portal/Requests/TicketRequests/NewForm?ID=PYp7B91BWaE_&RequestorType=ServiceOffering&SIDs=130)
+   * Have the Sponsored User set their UA Account Password by hitting the "Forgot Password" link on NTS's website once NTS completes your request: [ELMO - Easy Login Maintenance Option](https://elmo.alaska.edu/)
+   * If they run into issues using this service, please have them contact NTS directly at [907-450-8300](tel:907-370-3015)
+2. Submit a request for an RCS User Account: [RCS User Account Application](https://www.gi.alaska.edu/form/user-account-application-rcs-)
 
 Once these steps are completed, they will be able to log into the UA VPN and all assigned RCS systems. If you have any questions, please contact us at [uaf-rcs@alaska.edu ](<mailto:uaf-rcs@alaska.edu >)or [907-450-8602](tel:907-450-8602).
 
